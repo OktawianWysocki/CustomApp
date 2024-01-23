@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    margin-top: 200px;
+    margin-left: 210px;
+    width: 1500px;
+    height: 200px;
+    background-image: url("background.gif");
+    border: 3px solid black;
+}
+#horse{
+    width: 69px;
+    height: 50px;
+    background-image: url("horse.png");
+    position: relative;
+    background-repeat: no-repeat;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    15%{top: 120px;}
+    30%{top: 96px;}
+    50%{top: 70px;}
+    60%{top: 95px;}
+    75%{top: 120px;}
+    100%{top: 150px;}
+}
+
+#cactus{
+    background-image: url("cactus.png");
+    width: 40px;
+    height: 36px;
+    position: relative;
+    top: 114px;
+    left: 1500px;
+    animation: cactus 1.2s infinite linear;
+}
+@keyframes cactus{
+    0%{left: 1500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1500px;
+    margin-left: 210px;
+    background-color: sandybrown;
+    border: 3px solid black;
+}
+
+body{
+    background-image: url("desert.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
